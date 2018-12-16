@@ -32,5 +32,5 @@ let wrapper = document.querySelector('.glazing_slider'),
     
 
 //}
-console.log(tabContent);
+//console.log(tabContent);
 //module.exports = tabsWin;
