@@ -2,14 +2,17 @@
 let callBack = document.querySelectorAll('.phone_link'),
     modal = document.querySelector('.popup'),
     closeBack = document.getElementsByClassName('popup_close')[0];
+setTimeout(showModalWindow, 6000);
+
+function showModalWindow() {
+    modal.style.display = "block";
+    document.body.style.overflow = 'hidden';
+}
 for (let i = 0; i < callBack.length; i++) {
-    callBack[1].addEventListener('click', function () {
-        modalWindow.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-    });
+    callBack[i].addEventListener('click', showModalWindow);
 }
 closeBack.addEventListener('click', function () {
-    modalWindow.style.display = 'none';
+    modal.style.display = 'none';
     document.body.style.overflow = '';
 });
 //}
